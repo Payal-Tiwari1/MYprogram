@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var students = ViewData["Students"] as List<StudentModel>; 
+}
+
+@* <body>
+    <header>
+        <h1>Students Data Table</h1>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (students != null)
+                {
+                    foreach (var student in students)
+                    {
+                        <tr>
+                            <td>@student.rollNo</td>
+                            <td>@student.Name</td>
+                            <td>@student.Gender</td>
+                            <td>@student.Standard</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+        <footer>
+            <h5>Thank You..</h5>
+            <h5>Visit Again..</h5>
+        </footer>
+</body> *@
+
+    
+

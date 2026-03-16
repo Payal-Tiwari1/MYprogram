@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+<h1>This is my index page.. </h1>
+
+@*TempData*@
+<b>@ViewData["Data1"]</b>
+<br />
+<b>@ViewBag.Data2</b>
+<br />
+<b>@TempData["Data3"]</b>
+<br />
+@{
+    <p>This is from string array</p>
+    foreach (var item in (String[])TempData["Data4"])
+    {
+        <b>@item</b>
+        <br />
+        
+    }
+}
+
+
+
+
+@* ViewBag
+<b>@ViewBag.Data1</b>
+<br />
+<b>@ViewBag.Data2</b>
+<br />
+<b>@ViewBag.Data3</b>
+<br />
+
+@{
+    <p>This is from string array</p>
+    foreach (var item in ViewBag.Data4)
+    {
+        <b>@item</b><br />
+        
+    }
+}
+@{
+    <p>This is from List</p>
+    foreach (var item in ViewBag.Data5)
+    {
+        <b>@item</b><br />
+    }
+} *@
+
+
+
+
+
+
+@*ViewData*@
+@* <b>@ViewData["Data1"]</b><br />
+<b>@ViewData["Data2"]</b><br />
+<b>@ViewData["Data3"]</b><br />
+
+@{
+    <p>This is from string array</p>
+    foreach (var item in (string[])ViewData["Data4"])
+    {
+        <b>@item</b><br />
+        
+    }
+}
+
+@{
+    <p>This is from List</p>
+    foreach (var item in (List<string>)ViewData["Data5"])
+    {
+        <b>@item</b><br />
+    }
+
+
+} *@
+
+
+
+
+@* <h2>Current date and time @DateTime.Now</h2>  
+<h2>Current Year is @DateTime.Now.Year</h2>
+
+
+@{
+    var name = "Payal";
+    var age = 40;
+}
+
+<h2>My name is @name</h2>
+<h2>And age is @age</h2>
+
+@{
+    var MyName = "Payal";
+    if(MyName == "Payal")
+    {
+        <h3>MyName</h3>
+    }
+    else
+    {
+        <h3>Bye...</h3>
+    }
+}
+
+@{
+    for (int i = 0; i < 11; i++)
+    {
+        <h3>@i</h3>
+    }
+}
+
+@{
+    string[] names = { "Sonal", "Payal", "Durgesh" };
+
+    foreach (var item in names)
+    {
+        <h3>@item</h3>
+    }
+} *@
