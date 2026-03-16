@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CodeAnalyzing/CodeAnalyzing.csproj" Id="aa57c1ec-81bd-4f5f-8aeb-833e2f371340" />
+  <Project Path="NullHandling/NullHandling.csproj" Id="de939914-9033-45f1-8adc-20a97b8c817d" />
+  <Project Path="PacktLibrary/PacktLibrary.csproj" />
+  <Project Path="PeopleApp/PeopleApp.csproj" />
+  <Project Path="WarningsAsErrors/WarningsAsErrors.csproj" Id="c475c3d6-051a-4bfe-ab7e-4fad9a119d2d" />
+</Solution>

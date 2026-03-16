@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="WorkingWithCollections/WorkingWithCollections.csproj" />
+  <Project Path="WorkingWithNetworkResources/WorkingWithNetworkResources.csproj" Id="eb93cbaa-ac5f-439e-b9b3-3a20017cc7d3" />
+  <Project Path="WorkingWithNumbers/WorkingWithNumbers.csproj" />
+  <Project Path="WorkingWithRanges/WorkingWithRanges.csproj" Id="d681d90d-94f5-4551-bef1-2f3d5badc24d" />
+  <Project Path="WorkingWithRegularExpressions/WorkingWithRegularExpressions.csproj" />
+  <Project Path="WorkingWithText/WorkingWithText.csproj" />
+</Solution>

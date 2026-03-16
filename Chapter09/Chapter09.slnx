@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="WorkingWithEncodings/WorkingWithEncodings.csproj" Id="1723c962-c35f-42b8-a4fd-dc643b0f15f3" />
+  <Project Path="WorkingWithFileSystems/WorkingWithFileSystems.csproj" />
+  <Project Path="WorkingWithJson/WorkingWithJson.csproj" Id="a4223b98-6bbb-42b8-a3ae-ebfee4d788bc" />
+  <Project Path="WorkingWithSerialization/WorkingWithSerialization.csproj" Id="a2d1d0c3-67f4-41a7-a272-d875b3d36cae" />
+  <Project Path="WorkingWithStreams/WorkingWithStreams.csproj" />
+  <Project Path="WorkingWithTarArchives/WorkingWithTarArchives.csproj" Id="59935949-aba2-427b-8453-6e0777806571" />
+</Solution>
