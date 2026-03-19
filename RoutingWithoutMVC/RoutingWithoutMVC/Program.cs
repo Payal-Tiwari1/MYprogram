@@ -6,6 +6,10 @@ var app = builder.Build();
 
 //app.MapDefaultControllerRoute();
 
+//app.MapControllerRoute(
+//    name:"default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}"
+//    );
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=About}/{id?}"
@@ -16,6 +20,10 @@ app.MapControllerRoute(
 //    pattern: "{controller=User}/{action=Index}/{id?}"
 //    );
 
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=About}/{id?}"
+    );
 
 
 app.MapControllers();                   //Atribute based routing. This method enables attribute routing, which allows you to define routes directly on your controller actions using attributes. For example, in the "HomeController", you can use the [Route] attribute to specify the route for each action method. This provides more flexibility and control over the routing of your application.

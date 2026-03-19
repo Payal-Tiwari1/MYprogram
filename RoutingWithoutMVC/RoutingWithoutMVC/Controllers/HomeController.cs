@@ -23,13 +23,19 @@ namespace RoutingWithoutMVC.Controllers
         {
             return View();
         }
-
+        
+        public int Details(int id)
         //[Route("details/{id?}")]
         [Route("{id?}")]
         public int Details(int? id)
         {
+            return id;
             return id ?? 1;
         }
 
+        public ActionResult<int> Contact()
+        {
+            return (100);
+        }
     }
 }
