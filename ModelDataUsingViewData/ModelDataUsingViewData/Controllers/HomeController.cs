@@ -25,6 +25,10 @@ namespace ModelDataUsingViewData.Controllers
               new Employee { empId = 5, empName = "Sneha Sharma", empDesignation = "HR", empSalary = 55000 }
             };
 
+            //ViewData["myEmployee"] = myEmployee;
+            //ViewBag.myEmployee = myEmployee;
+            TempData["myEmployee"] = myEmployee;
+
             // ViewData["myEmployee"] = employee;
             //ViewBag.myEmployee = employee;
             //TempData["myEmployee"] = employee;
