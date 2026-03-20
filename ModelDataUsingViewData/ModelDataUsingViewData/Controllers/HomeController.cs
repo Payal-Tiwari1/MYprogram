@@ -8,17 +8,26 @@ namespace ModelDataUsingViewData.Controllers
     {
         public IActionResult Index()
         {
-            Employee employee = new Employee()
+            //Employee employee = new Employee()
+            //{
+            //    empId = 1,
+            //    empName = "Payal Tiwari",
+            //    empDesignation = "Manager",
+            //    empSalary = 60000
+            //};
+
+            var myEmployee = new List<Employee>()
             {
-                empId = 1,
-                empName = "Payal Tiwari",
-                empDesignation = "Manager",
-                empSalary = 60000
+              new Employee { empId = 1, empName = "Payal Tiwari", empDesignation = "Manager", empSalary = 60000 },  
+              new Employee { empId = 2, empName = "Rohit Kumar", empDesignation = "Developer", empSalary = 50000 },
+              new Employee { empId = 3, empName = "Anjali Singh", empDesignation = "Designer", empSalary = 45000 },
+              new Employee { empId = 4, empName = "Vikram Patel", empDesignation = "Tester", empSalary = 40000 },
+              new Employee { empId = 5, empName = "Sneha Sharma", empDesignation = "HR", empSalary = 55000 }
             };
 
             // ViewData["myEmployee"] = employee;
             //ViewBag.myEmployee = employee;
-            TempData["myEmployee"] = employee;
+            //TempData["myEmployee"] = employee;
             return View();
         }
 
