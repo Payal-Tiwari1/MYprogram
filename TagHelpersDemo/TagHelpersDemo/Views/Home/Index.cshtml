@@ -1,4 +1,5 @@
-﻿@{
+﻿@model TagHelpersDemo.Models.Employee;
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -7,14 +8,36 @@
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
 
+<div class="container" >
+    <div class="row">
+        <div class="col-sm-4">
+            <form class="d-grid" asp-action="Index" asp-conroller="Home" method="post">
+                <input asp-for="Name" class="form-control" placeholder="Enter Your Name" />
+                <br/>
+                <select asp-for="Gender" class="form-control" asp-items="Html.GetEnumSelectList<Gender>()" placeholder="Gender">
+                    <option value="">Select Gender</option>
+                </select>
+                <br/>
+                <input asp-for="Age" class="form-control" placeholder="Enter Your Age" />
+                <br/>
+                <input asp-for="Designation" class="form-control" placeholder="Enter Your Desination"/>
+                <br/>
+                <input asp-for="Salary" class="form-control" placeholder="Enter Your Salary"/>
+                <br/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
 
-<a href="/Home/Contact">Contact Page 1</a>
+
+
+
+
+@* <a href="/Home/Contact">Contact Page 1</a>
 <br />
 @Html.ActionLink("Contact Page 2", "Contact", "Home")
 <br />
 <a href="@Url.Action("Contact", "Home")">Contact Page 3</a>
 <br />
-<a asp-controller="Home" asp-action="Contact">Contact Page 4</a>
+<a asp-controller="Home" asp-action="Contact">Contact Page 4</a> *@
 
 
 @* <a href="/Home/Contact">Contact Page 1</a>
