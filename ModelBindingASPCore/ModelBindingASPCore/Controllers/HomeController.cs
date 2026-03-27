@@ -1,34 +1,18 @@
 using Microsoft.AspNetCore.Mvc;
-using TagHelpersDemo.Models;
+using ModelBindingASPCore.Models;
 using System.Diagnostics;
 
-
-
-namespace TagHelpersDemo.Controllers
+namespace ModelBindingASPCore.Controllers
 {
     public class HomeController : Controller
     {
-        [HttpGet]
-        [Route("")]
         public IActionResult Index()
-        
         {
             return View();
         }
-        [HttpPost]
-        public IActionResult Index(Employee e)
+        public string Details(int id, string name)
         {
-            return Content($"Name: {e.Name}, Salary: {e.Salary}");
-        }
-
-        public IActionResult About()
-        {
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            return View();
+            return " id is: "+ id + " Name is: " + name;
         }
 
         public IActionResult Privacy()

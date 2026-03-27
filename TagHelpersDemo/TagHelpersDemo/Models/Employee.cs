@@ -7,6 +7,8 @@
         public string Designation { get; set; }
         public int Age { get; set; }
         public int Salary { get; set; }
+        public bool Married { get; set; }
+        public string? Description { get; set; }
     }
 
     public enum Gender
