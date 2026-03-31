@@ -1,0 +1,44 @@
+﻿@model ValidationAttributesASPCore.Models.Student
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+           <div asp-validation-summary="All" style="color:red">
+
+           </div>
+            
+            <form asp-controller="Home" asp-action="Index" method="post"/>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" name="Name" placeholder="Enter Your Name" class="form-control" />
+            @* <span asp-validation-for="Name" style="color:red"></span> *@
+            <br/>
+            <input asp-for="Email" name="Email" placeholder="Enter Your Email" class="form-control" />
+            @* <span asp-validation-for="Email" style="color:red"></span> *@
+            <br/>
+            <input asp-for="Age" name="Age" placeholder="Enter Your Age" class="form-control" />
+            @* <span asp-validation-for="Age" style="color:red"></span> *@
+            <br />
+            <input asp-for="Password" name="Password" placeholder="Enter Your Password" class="form-control" />
+            @* <span asp-validation-for="Password" style="color:red"></span> *@
+            <br />
+            <label asp-for="ConfirmPassword"></label>
+            <input asp-for="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm Password" class="form-control" />
+            @* <span asp-validation-for="ConfirmPassword" style="color:red"></span> *@
+            <br />
+            <input asp-for="URL" name="URL" placeholder=" Enter Url" class="form-control" />
+            @* <span asp-validation-for="URL" style="color:red"></span> *@
+            <br />
+
+            <input type="submit" value="Submit" class="btn btn-outline-primary"/>
+
+        </div>
+    </div>
+</div>
