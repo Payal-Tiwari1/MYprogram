@@ -71,6 +71,26 @@ namespace LoginFormASPCore.Controllers
             return View("Login");
         }
 
+
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(UserTbl1 user)
+        {
+            if(ModelState.IsValid)
+            {
+
+                await context.UserTbl1s.AddAsync(user);
+                await context.SaveChangesAsync();
+                TempData["Success"] = "Registration successful. Please login.";
+                return RedirectToAction("Login");
+            }
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
