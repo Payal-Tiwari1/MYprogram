@@ -31,7 +31,7 @@ namespace ASPCoreWebAPI_CRUD.Controllers
                 return BadRequest();
             }
 
-            Student data = await context.Students.FindAsync(id);
+            var data = await context.Students.FindAsync(id);
            
             if (data == null)
             {
